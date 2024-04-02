@@ -1,0 +1,296 @@
+/* @import url(https://fonts.googleapis.com/css?family=Galada:regular); */
+@import url(https://fonts.googleapis.com/css?family=Bebas+Neue:regular);
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Bebas+Neue', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    /* Устанавливает цвет текста ссылки таким же, как у родительского элемента */
+    text-decoration: none;
+    /* Убирает подчёркивание */
+    font-style: normal;
+    /* Убирает курсив, если он был */
+    font-weight: normal;
+    /* Убирает жирность, если она была */
+}
+/* ===========Общие================== */
+.wrapper {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 20px 15px 2px;
+
+}
+/* ==============Header============== */
+.header {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header:not(:last-child) {
+    margin-bottom: 50px;
+}
+/* ==============Main=================== */
+.main{
+    margin-bottom: 30px;
+}
+.main__top {
+    margin-bottom: 60px;
+}
+/* ===============Верхняя часть блока================= */
+.top-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-main__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.top-main__img:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.top-main__title {
+    font-size: 30px;
+}
+.top-main__title:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.quote-top-main__text:not(:last-child){
+    margin-bottom: 10px;
+}
+.quote-top-main__author{
+    text-align: right;
+}
+/* ==============Нижняя часть блока==================== */
+.bottom-main__block1 {
+    margin-bottom: 30px;
+}
+
+.bottom-main__subtitle {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.bottom-main__subtitle:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.bottom-main__movies {
+    list-style-type: disc;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+.bottom-main__movie:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.bottom-main__link-movie {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.bottom-main__link-movie::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: all .3s ease-in-out;
+}
+.bottom-main__link-movie:hover::after{
+    visibility: visible;
+    width: 100%;
+   
+}
+.bottom-main__link {
+    font-size: 20px;
+}
+
+.bottom-main__link:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.bottom-main__reference {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.bottom-main__reference span {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 2px;
+}
+
+.bottom-main__reference span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-main__reference span:hover::after {
+    visibility: visible;
+    width: 100%;
+}
+
+.bottom-main__link span {
+   
+}
+/* ===========Footer================= */
+.footer{
+    text-align: center;
+}

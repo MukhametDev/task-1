@@ -151,7 +151,9 @@ a:active {
     max-width: 1030px;
     margin: 0 auto;
     padding: 20px 15px 2px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* ==============Header============== */
 .header {
